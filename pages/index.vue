@@ -14,8 +14,11 @@
 
   const isLoading = ref(true)
 
-  // Destructure only the keys you want to use
   const { smAndDown, mdAndUp } = useDisplay()
+
+  useHead({
+    title: 'Barterdito'
+  })
 
   onMounted(() => {
     setTimeout(() => {
